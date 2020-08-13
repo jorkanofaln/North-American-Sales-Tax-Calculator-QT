@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>208</width>
+    <height>398</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>North American Sales Taxe Calculator</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="calculateBtn">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>210</y>
+      <width>88</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Calculate</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtAmount">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>50</y>
+      <width>141</width>
+      <height>27</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblPrice">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>20</y>
+      <width>67</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>price</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::PlainText</enum>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="territorySelectCombo">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>140</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="editable">
+     <bool>true</bool>
+    </property>
+    <item>
+     <property name="text">
+      <string>AB</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>AL</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>AR</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>AZ</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>BC</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CA</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CO</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CT</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>DC</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>FL</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>GA</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>HI</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ID</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>IL</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>IN</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>IA</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>KS</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>KY</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>LA</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MA</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MB</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MD</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ME</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MI</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MN</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MO</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MS</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>NB</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>NC</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>NE</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>NL</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>NV</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>NJ</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>NM</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>NT</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>NS</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>NU</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>NY</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ON</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PA</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PE</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>QC</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>RI</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SC</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SD</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SK</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>TN</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>TX</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>UT</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>VA</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>VT</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>WA</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>WI</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>WV</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>WY</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>YK</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="lblProvinceState">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>100</y>
+      <width>111</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>State/Province</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblResult">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>260</y>
+      <width>121</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>priceWithTaxes</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="resultView">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>290</y>
+      <width>125</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>208</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuQuit">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionAbout_this_app"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuQuit"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAbout_this_app">
+   <property name="text">
+    <string>About this app</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>calculateBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>calculateSalesTax()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>93</x>
+     <y>246</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>159</x>
+     <y>244</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>calculateSalesTax()</slot>
+ </slots>
+</ui>
