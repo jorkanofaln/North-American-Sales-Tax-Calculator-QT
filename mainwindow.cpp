@@ -1,7 +1,5 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
-#include <sstream>
-#include<iostream>
 #include "taxCalculator.h"
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -16,6 +14,9 @@ MainWindow::~MainWindow()
 }
 void MainWindow::exitSlot(){
     MainWindow::close();
+}
+void MainWindow::aboutThisApp(){
+    QMessageBox::about(this,"About this app","A rewrite of the north american sales tax calculator in C++ using the QT5 graphics framework");
 }
 void MainWindow::calculateSalesTax(){
 
