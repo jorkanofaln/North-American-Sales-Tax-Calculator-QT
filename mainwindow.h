@@ -16,7 +16,7 @@ public:
     ~MainWindow();
 public slots:
     void calculateSalesTax();
-
+    void exitSlot();
 private:
     Ui::MainWindow *ui;
 };

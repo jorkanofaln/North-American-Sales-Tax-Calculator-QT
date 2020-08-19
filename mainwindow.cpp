@@ -14,11 +14,20 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
+void MainWindow::exitSlot(){
+    MainWindow::close();
+}
 void MainWindow::calculateSalesTax(){
 
      //Get values from comboboxand textEdit
+     double amount;
      std::string str_amount = ui->txtAmount->text().toStdString();
-     double amount = std::stod(str_amount);
+     if(str_amount != ""){
+         amount = std::stod(str_amount);
+     }
+     else{
+         amount = 0.0;
+     }
      std::string territory = ui->territorySelectCombo->currentText().toStdString();
     //Initializing taxCalculator
      taxCalculator tax(amount,territory);

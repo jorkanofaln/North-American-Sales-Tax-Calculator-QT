@@ -46,6 +46,9 @@
       <height>19</height>
      </rect>
     </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
     <property name="text">
      <string>price</string>
     </property>
@@ -446,6 +449,22 @@
     <hint type="destinationlabel">
      <x>159</x>
      <y>244</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionQuit</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>78</x>
+     <y>40</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>103</x>
+     <y>198</y>
     </hint>
    </hints>
   </connection>
