@@ -15,6 +15,11 @@ MainWindow::~MainWindow()
 void MainWindow::exitSlot(){
     MainWindow::close();
 }
+void MainWindow::clearFields(){
+    //Clearing fields
+    ui->txtAmount->clear();
+    ui->resultView->clear();
+}
 void MainWindow::aboutThisApp(){
     QMessageBox::about(this,"About this app","A rewrite of the north american sales tax calculator in C++ using the QT5 graphics framework");
 }
@@ -34,8 +39,8 @@ void MainWindow::calculateSalesTax(){
      taxCalculator tax(amount,territory);
      double priceWithTaxes = tax.calculateSalesTax();
      //Converting and Displaying result
-     std::ostringstream strs;
-     strs << priceWithTaxes;
-     std::string str_priceWithTaxes = strs.str();
+     std::ostringstream streamTaxes;
+     streamTaxes << priceWithTaxes;
+     std::string str_priceWithTaxes = streamTaxes.str();
      ui->resultView->setText(QString::fromStdString(str_priceWithTaxes));
 }

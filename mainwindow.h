@@ -19,6 +19,7 @@ public:
 public slots:
     void calculateSalesTax();
     void exitSlot();
+    void clearFields();
     void aboutThisApp();
 private:
     Ui::MainWindow *ui;

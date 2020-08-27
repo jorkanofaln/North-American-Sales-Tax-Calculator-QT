@@ -411,6 +411,7 @@
     <property name="title">
      <string>File</string>
     </property>
+    <addaction name="actionReset"/>
     <addaction name="actionQuit"/>
    </widget>
    <widget class="QMenu" name="menuQuit">
@@ -431,6 +432,11 @@
   <action name="actionQuit">
    <property name="text">
     <string>Quit</string>
+   </property>
+  </action>
+  <action name="actionReset">
+   <property name="text">
+    <string>Reset</string>
    </property>
   </action>
  </widget>
@@ -484,9 +490,26 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>actionReset</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>clearFields()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>103</x>
+     <y>198</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>calculateSalesTax()</slot>
   <slot>aboutThisApp()</slot>
+  <slot>clearFields()</slot>
  </slots>
 </ui>
