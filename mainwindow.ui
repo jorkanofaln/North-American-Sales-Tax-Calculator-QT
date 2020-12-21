@@ -418,15 +418,16 @@
     <property name="title">
      <string>Help</string>
     </property>
-    <addaction name="actionAbout_this_app"/>
+    <addaction name="action_LicenseInfo"/>
+    <addaction name="actionabout"/>
    </widget>
    <addaction name="menuFile"/>
    <addaction name="menuQuit"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
-  <action name="actionAbout_this_app">
+  <action name="action_LicenseInfo">
    <property name="text">
-    <string>About this app</string>
+    <string>License info</string>
    </property>
   </action>
   <action name="actionQuit">
@@ -437,6 +438,11 @@
   <action name="actionReset">
    <property name="text">
     <string>Reset</string>
+   </property>
+  </action>
+  <action name="actionabout">
+   <property name="text">
+    <string>about</string>
    </property>
   </action>
  </widget>
@@ -475,7 +481,7 @@
    </hints>
   </connection>
   <connection>
-   <sender>actionAbout_this_app</sender>
+   <sender>actionabout</sender>
    <signal>triggered()</signal>
    <receiver>MainWindow</receiver>
    <slot>aboutThisApp()</slot>
@@ -506,10 +512,27 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>action_LicenseInfo</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>aboutLicense()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>103</x>
+     <y>198</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>calculateSalesTax()</slot>
   <slot>aboutThisApp()</slot>
   <slot>clearFields()</slot>
+  <slot>aboutLicense()</slot>
  </slots>
 </ui>
